@@ -10,11 +10,11 @@ export const TransactionHistory = ({ transactionsInfo }) => {
   return (
     <Table>
       <TableHeader>
-        <tr>
+        <Row>
           <HeaderCell>Type</HeaderCell>
           <HeaderCell>Amount</HeaderCell>
           <HeaderCell>Currency</HeaderCell>
-        </tr>
+        </Row>
       </TableHeader>
       <tbody>
         {transactionsInfo.map(({ id, type, amount, currency }) => {
